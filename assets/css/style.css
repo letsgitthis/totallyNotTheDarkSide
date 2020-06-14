@@ -4,8 +4,6 @@
   margin: 0px;
 }
 
-
-
 body {
   background-color: #0b1f3a;
   color: #d7cec9;
@@ -15,6 +13,36 @@ body {
 
 nav {
   font-family: 'Orbitron', sans-serif;
+}
+
+.s-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+/* .nav-wrapper {
+  display: flex;
+  justify-content: center;
+} */
+
+#SFNsubmit {
+    margin: 10px;
+}
+
+#SFNsubmit #spaceFlightUserInput {
+    border: 1px solid white;
+    border-radius: 5px;
+    /* width: 200px; */
+    max-width: 300px;
+    margin: 5px;
+}
+
+/* not working */
+.imageOfTheDay {
+    max-width: 100%;
+    width: 100%;
+    
 }
 
 .results {
@@ -52,20 +80,17 @@ nav {
 
 .dr-btn {
   height: 40px;
-  width: 50px;
+  width: 40px;
   background-color: white;
   display: none;
   border-radius: 2px;
   margin: 10px;
+  justify-content: center;
 }
 
-.dr-con {
-  width: 100px;
-}
 
 .btn:hover, .dr-btn:hover {
-  background-color: grey;
-  
+  background-color:white;
 }
 
 #go-btn {
@@ -123,21 +148,45 @@ a {
   float: right;
 }
 
-/* .newsDive {
+/* Hubble Definition Title */
+.defTitle {
+    padding: 30px 0px 0px 30px;
+    font-size: larger;
+    color: white;
+}
 
-} */
+.hubbleDefinition {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: large;
+    padding-top: 20px;
+}
+
+.rocketContainer {
+    margin-left: 20px;
+}
+
+.rocketContainer strong {
+    font-size: x-large;
+}
 
 .rocketsDiv {
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding: 10px;
 }
 
 .rocketsDiv a {
-    /* border: 1px solid red; */
+    border: 1px solid white;
     border-radius: 5px;
     background-color: mediumturquoise;
     color: black;
-    padding: 3px;
+    padding: 5px;
 }
 
 .rocketName {
@@ -146,10 +195,11 @@ a {
 
 .rocketCountry {
     margin: 3px;
+    margin-bottom: 10px;
 }
 
 .rocketDescription {
-    margin: 5px;
+    margin: 10px;
 }
 
 .footer {
@@ -177,17 +227,18 @@ a {
   color: white;
 }
 
-/* .upcoming-launch-container {
-} */
-
 .launchDatesDiv {
+    max-width: 90%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .launchTitle {
     color: limegreen;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -215,6 +266,42 @@ a {
     padding: 10px 0px;
 }
 
+.newsDiv {
+    margin-top: 40px;
+}
+
+.newsDiv a {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: turquoise;
+    padding: 5px;
+}
+
+.spaceFlightNewsHeader {
+    font-size: x-large;
+}
+
+.spaceFlightNewsCard {
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    margin: 5px;
+    padding: 15px;
+}
+
+.newsResults {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.linkDiv {
+    color: black;
+}
+
+.pDateDiv {
+    margin-top: 10px;
+}
+
 .hidingQuery {
     display: none;
 }
@@ -222,10 +309,6 @@ a {
 .quoteDiv {
     padding: 10px;
     margin: 10px;
-}
-
-.radioButton {
-    margin-top: 20px;
 }
 
 .inputFontColor {
@@ -236,25 +319,16 @@ a {
   font-size: 2em;
 }
 
-.nav-wrapper {
-  justify-content: center;
-  display: flex;
-}
-
-
 .dropdown-content {
-  background-color: grey;
+  background-color: white;
+  color: black;
 }
-
 
 .nav-tabs {
   display: flex;
   justify-content: center;
 }
 
-/* header {
-  
-} */
 
 .btn {
   background-color: grey;
@@ -262,8 +336,32 @@ a {
   text-align: center;
   width: 110px;
   border-radius: 2px;
+  color: black;
 }
 
-.col {
-  margin: 20px;
+.sc-btn {
+  display: flex;
+  flex-wrap: wrap;
+
 }
+
+.sc-sc {
+  margin: 50px;
+}
+
+.input-field {
+  min-width: 500px;
+  width: 700px;
+}
+
+#burg {
+  height: 40px;
+  width:40px;
+}
+
+.sx-arc {
+  min-width: 470px;
+}
+
+
+
