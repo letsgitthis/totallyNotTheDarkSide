@@ -15,6 +15,36 @@ nav {
   font-family: 'Orbitron', sans-serif;
 }
 
+.s-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+/* .nav-wrapper {
+  display: flex;
+  justify-content: center;
+} */
+
+#SFNsubmit {
+    margin: 10px;
+}
+
+#SFNsubmit #spaceFlightUserInput {
+    border: 1px solid white;
+    border-radius: 5px;
+    /* width: 200px; */
+    max-width: 300px;
+    margin: 5px;
+}
+
+/* not working */
+.imageOfTheDay {
+    max-width: 100%;
+    width: 100%;
+    
+}
+
 .results {
   margin: 0;
   padding: 0;
@@ -198,13 +228,17 @@ a {
 }
 
 .launchDatesDiv {
+    max-width: 90%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .launchTitle {
     color: limegreen;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -284,12 +318,6 @@ a {
 .s-title {
   font-size: 2em;
 }
-
-.nav-wrapper {
-  justify-content: center;
-  display: flex;
-}
-
 
 .dropdown-content {
   background-color: white;

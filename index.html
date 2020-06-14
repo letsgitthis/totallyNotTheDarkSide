@@ -1,84 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- material icons  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- this is our style sheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- orbitron font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:600px)"
+      href="./assets/css/queries.css"
+    />
+    <title>Space Portal | Main</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <!-- material icons  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- this is our style sheet  -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- orbitron font  -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" media="screen and (max-width:600px)" href="./assets/css/queries.css">
-  <title>Space Portal | Main</title>
-</head>
-
-<header>
-  <nav class="nav-extended indigo darken-4">
-    <div class="nav-wrapper">
-      <div class="nav-st">
-                <!-- Dropdown Trigger -->
-                <a class='dropdown-trigger dr-btn' href='#' data-target='dropdown1'>
-                  <img id="burg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="">
-                </a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown1' class='dropdown-content tabs dr-con'>
-                  <li class="tab dab"><a href="#test1">Space Flight News</a></li>
-                  <li class="tab"><a href="#test2">Space X Archives</a></li>
-                  <li class="tab"><a href="#test3">Hubble Glossary</a></li>
-                </ul>
+  <header>
+    <nav class="nav-extended indigo darken-4">
+      <!-- <div class="nav-wrapper"> -->
+        <div class="nav-st">
+          <!-- Dropdown Trigger -->
+          <a class="dropdown-trigger dr-btn" href="#" data-target="dropdown1">
+            <img
+              id="burg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+              alt=""
+            />
+          </a>
+          <!-- Dropdown Structure -->
+          <ul id="dropdown1" class="dropdown-content tabs dr-con">
+            <li class="tab dab"><a href="#test1">Space Flight News</a></li>
+            <li class="tab"><a href="#test2">Space X Archives</a></li>
+            <li class="tab"><a href="#test3">Hubble Glossary</a></li>
+          </ul>
+        </div>
+        
+        <!-- <button class="material-icons m-btn">menu</button> -->
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!-- for scaling features -->
+        </ul>
+      <!-- </div> -->
+      <div class="container-fluid">
+        <div class="nav-st row">
+          <a href="#" class="s-title">Space Portal</a>
+        </div>
       </div>
-      <div class="nav-st">
-        <a href="#" class="s-title">Space Portal</a>
+      <div class="nav-content">
+        <!-- user input field  -->
+        <ul class="tabs nav-tabs tabs-transparent">  
+            <div class="input-field col s12">
+            <form id="SFNsubmit">
+              <label for="search">Search:</label><br />
+              <input
+                type="text"
+                value=""
+                id="spaceFlightUserInput"
+                name="textarea1"
+                class="inputFontColor materialize-textarea focusNew"
+              /><br />
+              <input
+                type="submit"
+                value="SEARCH"
+                class="waves-effect waves-light btn spaceFlightSearch"
+              />
+              <input
+                type="button"
+                value="CLEAR"
+                class="waves-effect waves-light btn spaceFlightClear"
+              />
+            </form>
+          </div>
+          <li class="tab"><a href="#test1">Space Flight News</a></li>
+          <li class="tab"><a href="#test2">Space X Archives</a></li>
+          <li class="tab"><a href="#test3">Hubble Glossary</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <!-- <button class="material-icons m-btn">menu</button> -->
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <!-- for scaling features -->
-      </ul>
-    </div>
-    <div class="nav-content">
-      <ul class="tabs nav-tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Space Flight News</a></li>
-        <li class="tab"><a href="#test2">Space X Archives</a></li>
-        <li class="tab"><a href="#test3">Hubble Glossary</a></li>
-      </ul>
-    </div>
-  </nav>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <!-- these are search options query cards-->
         <aside class="col s12 m6 hidingQuery search">
           <div class="row">
             <!-- SPACE FLIGHT NEWS  -->
-            <div id="test1" class="col s12 sc-btn">
+            <!-- <div id="test1" class="col s12 sc-btn">
               <strong>Space Flight News</strong>
-              <!-- user input field  -->
-              <div class="input-field col s12">
-                    <form id="SFNsubmit">
-                      <label for="search">Search:</label><br>
-                       <input type="text" value="" id="spaceFlightUserInput" name="textarea1"class="inputFontColor materialize-textarea focusNew"><br>
-                        <input type="submit" value="SEARCH" class="waves-effect waves-light btn spaceFlightSearch">
-                        <input type="button" value="CLEAR" class="waves-effect waves-light btn spaceFlightClear">
-                      </form>
-                <!-- <textarea value="search" id="spaceFlightUserInput"
-                  class="inputFontColor materialize-textarea focusNew"></textarea>
-                <label for="textarea1">Search</label> -->
-              </div>
               
-            </div>
+            </div> -->
             <!-- SPACE X ARCHIVES  -->
             <div id="test2" class="col s12">
               <strong>Space X Archives</strong>
-              <div class="row sx-arc ">
+              <div class="row sx-arc">
                 <div class="col s3 m3 radioButton">
                   <!-- clear button  -->
-                  <a data-id="2" class="waves-effect waves-light btn">ROCKETS</a>
+                  <a data-id="2" class="waves-effect waves-light btn"
+                    >ROCKETS</a
+                  >
                 </div>
                 <!-- end of Space X Archive buttons -->
                 <div class="col s3 m3">
@@ -88,9 +121,9 @@
               </div>
             </div>
             <!-- HUBBLE NEWS GLOSSARY  -->
-            <div id="test3" class="col s12 sc-btn">
+            <!-- <div id="test3" class="col s12 sc-btn">
               <strong>Hubble Glossary</strong>
-              <!-- user input field  -->
+              <!-- user input field  --
               <div class="input-field col s12">
                 <form id="hubbleSubmit">
                   <label for="textarea1">Search Any Astronomy Term</label>
@@ -99,7 +132,7 @@
                   <input type="button" value="clear" class="inputFontColor materialize-textarea focusHub waves-effect waves-light btn hubbleClear" >
                 </form>
               </div>
-            </div>
+            </div> -->
           </div>
         </aside>
         <!-- this is where the results of the query populates -->
@@ -118,7 +151,7 @@
         <div class="col s12">
           <!-- this is where the launch times populate  -->
           <!-- <div class="launchTitle"></div> -->
-          <div class="upcoming-launch container">
+          <div class="upcoming-launch">
             <!-- <div class="launchTitle"></div> -->
             <div class="row launchDatesDiv"></div>
           </div>
@@ -150,5 +183,4 @@
     <!-- this is the dropdown materialize js  -->
     <script src="./assets/js/dropdown.js"></script>
   </body>
-
 </html>
