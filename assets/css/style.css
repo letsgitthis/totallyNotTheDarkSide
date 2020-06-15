@@ -223,7 +223,7 @@ a {
 }
 
 .quoteDiv {
-  font-size: 30px;
+  /* font-size: 30px; */
   color: white;
 }
 
@@ -317,6 +317,8 @@ a {
 
 .s-title {
   font-size: 2em;
+  width: fit-content;
+  margin: 0;
 }
 
 .dropdown-content {
@@ -327,6 +329,7 @@ a {
 .nav-tabs {
   display: flex;
   justify-content: center;
+  height: fit-content;
 }
 
 

@@ -32,62 +32,63 @@
   <header>
     <nav class="nav-extended indigo darken-4">
       <!-- <div class="nav-wrapper"> -->
-        <div class="nav-st">
-          <!-- Dropdown Trigger -->
-          <a class="dropdown-trigger dr-btn" href="#" data-target="dropdown1">
-            <img
-              id="burg"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
-              alt=""
-            />
-          </a>
-          <!-- Dropdown Structure -->
-          <ul id="dropdown1" class="dropdown-content tabs dr-con">
-            <li class="tab dab"><a href="#test1">Space Flight News</a></li>
+      <div class="nav-st">
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-trigger dr-btn" href="#" data-target="dropdown1">
+          <img
+            id="burg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt=""
+          />
+        </a>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content tabs dr-con">
+          <li class="tab dab"><a href="#test1">Space Flight News</a></li>
+          <li class="tab"><a href="#test2">Space X Archives</a></li>
+          <li class="tab"><a href="#test3">Hubble Glossary</a></li>
+        </ul>
+      </div>
+
+      <!-- <button class="material-icons m-btn">menu</button> -->
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <!-- for scaling features -->
+      </ul>
+      <!-- </div> -->
+      <div class="container-fluid">
+        <!-- </div> -->
+        <div class="nav-content">
+          <!-- user input field  -->
+          <ul class="tabs nav-tabs tabs-transparent">
+                <div class="nav-st row">
+                  <a href="#" class="s-title">Space Portal</a>
+                </div>
+            <div class="input-field col s12">
+              <form id="SFNsubmit">
+                <label for="search">Search:</label>
+                <input
+                  type="text"
+                  value=""
+                  id="spaceFlightUserInput"
+                  name="textarea1"
+                  class="inputFontColor materialize-textarea focusNew"
+                />
+                <input
+                  type="submit"
+                  value="SEARCH"
+                  class="waves-effect waves-light btn spaceFlightSearch"
+                />
+                <input
+                  type="button"
+                  value="CLEAR"
+                  class="waves-effect waves-light btn spaceFlightClear"
+                />
+              </form>
+            </div>
+            <li class="tab"><a href="#test1">Space Flight News</a></li>
             <li class="tab"><a href="#test2">Space X Archives</a></li>
             <li class="tab"><a href="#test3">Hubble Glossary</a></li>
           </ul>
         </div>
-        
-        <!-- <button class="material-icons m-btn">menu</button> -->
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <!-- for scaling features -->
-        </ul>
-      <!-- </div> -->
-      <div class="container-fluid">
-        <div class="nav-st row">
-          <a href="#" class="s-title">Space Portal</a>
-        </div>
-      </div>
-      <div class="nav-content">
-        <!-- user input field  -->
-        <ul class="tabs nav-tabs tabs-transparent">  
-            <div class="input-field col s12">
-            <form id="SFNsubmit">
-              <label for="search">Search:</label><br />
-              <input
-                type="text"
-                value=""
-                id="spaceFlightUserInput"
-                name="textarea1"
-                class="inputFontColor materialize-textarea focusNew"
-              /><br />
-              <input
-                type="submit"
-                value="SEARCH"
-                class="waves-effect waves-light btn spaceFlightSearch"
-              />
-              <input
-                type="button"
-                value="CLEAR"
-                class="waves-effect waves-light btn spaceFlightClear"
-              />
-            </form>
-          </div>
-          <li class="tab"><a href="#test1">Space Flight News</a></li>
-          <li class="tab"><a href="#test2">Space X Archives</a></li>
-          <li class="tab"><a href="#test3">Hubble Glossary</a></li>
-        </ul>
       </div>
     </nav>
   </header>
@@ -120,11 +121,14 @@
                 </div>
               </div>
             </div>
+
+            <!-- Use below as reference to later changes -->
+
             <!-- HUBBLE NEWS GLOSSARY  -->
             <!-- <div id="test3" class="col s12 sc-btn">
-              <strong>Hubble Glossary</strong>
-              <!-- user input field  --
-              <div class="input-field col s12">
+              <strong>Hubble Glossary</strong> -->
+            <!-- user input field  -->
+            <!-- <div class="input-field col s12">
                 <form id="hubbleSubmit">
                   <label for="textarea1">Search Any Astronomy Term</label>
                   <input type="text" value='' id="hubbleUserInput"name="textarea1" class="inputFontColor materialize-textarea"> 
@@ -133,6 +137,8 @@
                 </form>
               </div>
             </div> -->
+
+            <!-- end -->
           </div>
         </aside>
         <!-- this is where the results of the query populates -->
@@ -141,13 +147,16 @@
             <!-- *********** result for space news api *********** -->
           </div>
         </section>
-        <div class="col s12">
-          <!-- this is where the quote goes  -->
-          <div class="quoteDiv"></div>
-        </div>
         <div class="container">
           <div class="row">
             <div class="col s12">
+              <!-- this is where the quote goes  -->
+              <div class="quoteDiv"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <!-- image of day or video of day -->
               <div class="imageOfTheDay"></div>
             </div>
           </div>
