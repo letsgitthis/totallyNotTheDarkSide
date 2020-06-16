@@ -40,7 +40,7 @@ $(document).ready(function () {
 
         let launchCount = $("<div>").text(`Upcoming Rocket Launches Next: ${response.count}`);
         
-        // adding a class for jon to style with 
+        // adding a class for john to style with 
         launchCount.addClass('launchTitle');
 
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
             let date = $("<div>").text(`launch date: ${moment.parseZone(e.net).utcOffset(e.net).format('LLL')}`);
             let id = $("<div>").text(`launch id: ${e.id}`);
             let launchContainer = $("<div>");
-            launchContainer.addClass('launchCardStyle');
+            launchContainer.addClass('launchCardStyle', 'carousel');
 
             launchContainer.append(name);
             launchContainer.append(date);

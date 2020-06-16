@@ -39,20 +39,18 @@
         >
         <ul class="right hide-on-med-and-down">
           <li>
-            <!-- <div class="input-field col s12"> -->
             <form id="SFNsubmit">
               <input
                 type="text"
                 value=""
                 placeholder="Search"
                 id="spaceFlightUserInput"
-                name="textarea1" 
-                class="label-icon" 
-                for="search" 
-                required 
-                />
+                name="textarea1"
+                class="label-icon"
+                for="search"
+                required
+              />
             </form>
-            <!-- </div> -->
           </li>
           <li><a class="tab" href="#test1">Space Flight News</a></li>
           <li><a class="tab" href="#test2">Space X Archives</a></li>
@@ -65,7 +63,20 @@
       <li><a class="tab" href="#test1">Space Flight News</a></li>
       <li><a class="tab" href="#test2">Space X Archives</a></li>
       <li><a class="tab" href="#test3">Hubble Glossary</a></li>
-      <li><a>Search</a></li>
+      <li>
+        <form id="SFNsubmit">
+          <input
+            type="text"
+            value=""
+            placeholder="Search"
+            id="spaceFlightUserInput"
+            name="textarea1"
+            class="label-icon"
+            for="search"
+            required
+          />
+        </form>
+      </li>
     </ul>
   </header>
 
@@ -74,20 +85,20 @@
       <div class="row">
         <div class="col s12">
           <!-- this is where the launch times populate  -->
-          <div class="carousel carousel-slider">
-            <div class="carousel launchDatesDiv">
-              <div class="carousel-item launchCardDiv"></div>
+            <div class="carousel carousel-slider launchDatesDiv">
+              <div class="carousel-item launchCardDiv">
+                <a class="carousel-item launchCardDiv" href="#"></a>
+              </div>
             </div>
-          </div>
         </div>
         <!-- these are search options query cards-->
         <aside class="col s12 m6 hidingQuery search">
           <div class="row">
             <!-- SPACE FLIGHT NEWS  -->
-            <!-- <div id="test1" class="col s12 sc-btn">
+            <div id="test1" class="col s12 sc-btn">
               <strong>Space Flight News</strong>
               
-            </div> -->
+            </div>
             <!-- SPACE X ARCHIVES  -->
             <div id="test2" class="col s12">
               <strong>Space X Archives</strong>
@@ -109,7 +120,7 @@
         </aside>
 
         <!-- this is where the results of the query populates -->
-        <section class="col s12 m6 hidingQuery search">
+        <!-- <section class="col s12 m6 hidingQuery search"> -->
           <div class="row newsDiv">
             <div class="spaceFlightNewsContainer">
               <!-- *********** result for space news api *********** -->
