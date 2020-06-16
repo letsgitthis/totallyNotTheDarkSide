@@ -59,31 +59,33 @@
         <div class="nav-content">
           <!-- user input field  -->
           <ul class="tabs nav-tabs tabs-transparent">
-                <div class="nav-st row">
-                  <a href="#" class="s-title">Space Portal</a>
-                </div>
             <div class="input-field col s12">
               <form id="SFNsubmit">
-                <label for="search">Search:</label>
+                <!-- <label for="search">Search:</label> -->
                 <input
-                  type="text"
-                  value=""
-                  id="spaceFlightUserInput"
-                  name="textarea1"
-                  class="inputFontColor materialize-textarea focusNew"
+                type="text"
+                value=""
+                placeholder="Search"
+                id="spaceFlightUserInput"
+                name="textarea1"
+                class="inputFontColor materialize-textarea focusNew"
                 />
                 <input
-                  type="submit"
-                  value="SEARCH"
-                  class="waves-effect waves-light btn spaceFlightSearch"
+                type="submit"
+                value="SEARCH"
+                class="waves-effect waves-light btn spaceFlightSearch"
                 />
-                <input
-                  type="button"
-                  value="CLEAR"
-                  class="waves-effect waves-light btn spaceFlightClear"
-                />
+                <!-- do we really need a clear button? -->
+                <!-- <input
+                type="button"
+                value="CLEAR"
+                class="waves-effect waves-light btn spaceFlightClear"
+                /> -->
               </form>
             </div>
+                <div class="nav-st row">
+                  <div class="s-title">Space Portal</div>
+                </div>
             <li class="tab"><a href="#test1">Space Flight News</a></li>
             <li class="tab"><a href="#test2">Space X Archives</a></li>
             <li class="tab"><a href="#test3">Hubble Glossary</a></li>
@@ -91,11 +93,39 @@
         </div>
       </div>
     </nav>
+
+  <!-- This will be the new nav bar -->
+  <nav>
+    <div class="nav-st row">
+      <a href="#!" class="brand-logo">Space Portal</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="tab" href="#test1">Space Flight News</a></li>
+        <li><a class="tab" href="#test2">Space X Archives</a></li>
+        <li><a class="tab" href="#test3">Hubble Glossary</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="tab" href="#test1">Space Flight News</a></li>
+    <li><a class="tab" href="#test2">Space X Archives</a></li>
+    <li><a class="tab" href="#test3">Hubble Glossary</a></li>
+  </ul>
+
   </header>
 
   <body>
     <div class="container-fluid">
       <div class="row">
+        <div class="col s12">
+          <!-- this is where the launch times populate  -->
+          <div class="carousel carousel-slider">
+            <div class="carousel launchDatesDiv">
+              <div class="carousel-item launchCardDiv"></div>
+            </div>
+          </div>
+        </div>
         <!-- these are search options query cards-->
         <aside class="col s12 m6 hidingQuery search">
           <div class="row">
@@ -144,7 +174,9 @@
         <!-- this is where the results of the query populates -->
         <section class="col s12 m6 hidingQuery search">
           <div class="row newsDiv">
+            <div class="spaceFlightNewsContainer">
             <!-- *********** result for space news api *********** -->
+            </div>
           </div>
         </section>
         <div class="container">
@@ -159,14 +191,6 @@
               <!-- image of day or video of day -->
               <div class="imageOfTheDay"></div>
             </div>
-          </div>
-        </div>
-        <div class="col s12">
-          <!-- this is where the launch times populate  -->
-          <!-- <div class="launchTitle"></div> -->
-          <div class="upcoming-launch">
-            <!-- <div class="launchTitle"></div> -->
-            <div class="row launchDatesDiv"></div>
           </div>
         </div>
         <div class="col s12"></div>

@@ -5,3 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   $('.dropdown-trigger').dropdown();
   
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
