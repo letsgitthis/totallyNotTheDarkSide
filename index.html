@@ -30,89 +30,43 @@
   </head>
 
   <header>
-    <nav class="nav-extended indigo darken-4">
-      <!-- <div class="nav-wrapper"> -->
-      <div class="nav-st">
-        <!-- Dropdown Trigger -->
-        <a class="dropdown-trigger dr-btn" href="#" data-target="dropdown1">
-          <img
-            id="burg"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
-            alt=""
-          />
-        </a>
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content tabs dr-con">
-          <li class="tab dab"><a href="#test1">Space Flight News</a></li>
-          <li class="tab"><a href="#test2">Space X Archives</a></li>
-          <li class="tab"><a href="#test3">Hubble Glossary</a></li>
-        </ul>
-      </div>
-
-      <!-- <button class="material-icons m-btn">menu</button> -->
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <!-- for scaling features -->
-      </ul>
-      <!-- </div> -->
-      <div class="container-fluid">
-        <!-- </div> -->
-        <div class="nav-content">
-          <!-- user input field  -->
-          <ul class="tabs nav-tabs tabs-transparent">
-            <div class="input-field col s12">
-              <form id="SFNsubmit">
-                <!-- <label for="search">Search:</label> -->
-                <input
+    <!-- This will be the new nav bar -->
+    <nav>
+      <div class="nav-st row">
+        <a href="#!" class="brand-logo">Space Portal</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <!-- <div class="input-field col s12"> -->
+            <form id="SFNsubmit">
+              <input
                 type="text"
                 value=""
                 placeholder="Search"
                 id="spaceFlightUserInput"
-                name="textarea1"
-                class="inputFontColor materialize-textarea focusNew"
+                name="textarea1" 
+                class="label-icon" 
+                for="search" 
+                required 
                 />
-                <input
-                type="submit"
-                value="SEARCH"
-                class="waves-effect waves-light btn spaceFlightSearch"
-                />
-                <!-- do we really need a clear button? -->
-                <!-- <input
-                type="button"
-                value="CLEAR"
-                class="waves-effect waves-light btn spaceFlightClear"
-                /> -->
-              </form>
-            </div>
-                <div class="nav-st row">
-                  <div class="s-title">Space Portal</div>
-                </div>
-            <li class="tab"><a href="#test1">Space Flight News</a></li>
-            <li class="tab"><a href="#test2">Space X Archives</a></li>
-            <li class="tab"><a href="#test3">Hubble Glossary</a></li>
-          </ul>
-        </div>
+            </form>
+            <!-- </div> -->
+          </li>
+          <li><a class="tab" href="#test1">Space Flight News</a></li>
+          <li><a class="tab" href="#test2">Space X Archives</a></li>
+          <li><a class="tab" href="#test3">Hubble Glossary</a></li>
+        </ul>
       </div>
     </nav>
 
-  <!-- This will be the new nav bar -->
-  <nav>
-    <div class="nav-st row">
-      <a href="#!" class="brand-logo">Space Portal</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="tab" href="#test1">Space Flight News</a></li>
-        <li><a class="tab" href="#test2">Space X Archives</a></li>
-        <li><a class="tab" href="#test3">Hubble Glossary</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <ul class="sidenav" id="mobile-demo">
-    <li><a class="tab" href="#test1">Space Flight News</a></li>
-    <li><a class="tab" href="#test2">Space X Archives</a></li>
-    <li><a class="tab" href="#test3">Hubble Glossary</a></li>
-  </ul>
-
+    <ul class="sidenav" id="mobile-demo">
+      <li><a class="tab" href="#test1">Space Flight News</a></li>
+      <li><a class="tab" href="#test2">Space X Archives</a></li>
+      <li><a class="tab" href="#test3">Hubble Glossary</a></li>
+      <li><a>Search</a></li>
+    </ul>
   </header>
 
   <body>
@@ -151,31 +105,14 @@
                 </div>
               </div>
             </div>
-
-            <!-- Use below as reference to later changes -->
-
-            <!-- HUBBLE NEWS GLOSSARY  -->
-            <!-- <div id="test3" class="col s12 sc-btn">
-              <strong>Hubble Glossary</strong> -->
-            <!-- user input field  -->
-            <!-- <div class="input-field col s12">
-                <form id="hubbleSubmit">
-                  <label for="textarea1">Search Any Astronomy Term</label>
-                  <input type="text" value='' id="hubbleUserInput"name="textarea1" class="inputFontColor materialize-textarea"> 
-                  <input value="search" type='submit' class="waves-effect waves-light btn hubbleSearch"> 
-                  <input type="button" value="clear" class="inputFontColor materialize-textarea focusHub waves-effect waves-light btn hubbleClear" >
-                </form>
-              </div>
-            </div> -->
-
-            <!-- end -->
           </div>
         </aside>
+
         <!-- this is where the results of the query populates -->
         <section class="col s12 m6 hidingQuery search">
           <div class="row newsDiv">
             <div class="spaceFlightNewsContainer">
-            <!-- *********** result for space news api *********** -->
+              <!-- *********** result for space news api *********** -->
             </div>
           </div>
         </section>
@@ -198,7 +135,10 @@
     </div>
 
     <footer class="footer">
-      <p>Project 1 | Created by totallyNotTheDarkSide | 2020</p>
+      <p>
+        Project 1 | Created by totallyNotTheDarkSide | version 2.0 by John
+        Bentley | 2020
+      </p>
     </footer>
     <!-- moment js library  -->
     <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>

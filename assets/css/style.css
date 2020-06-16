@@ -48,19 +48,17 @@ nav {
     margin-left: 5px;
 } */
 
-#SFNsubmit #spaceFlightUserInput {
+/* #SFNsubmit #spaceFlightUserInput {
     border: 1px solid white;
     border-radius: 5px;
-    /* width: 200px; */
     max-width: 300px;
     margin: 5px;
-}
+} */
 
 /* not working */
 .imageOfTheDay {
+    max-height: 500px;
     max-width: 100%;
-    width: 100%;
-    
 }
 
 .results {
