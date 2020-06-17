@@ -58,14 +58,6 @@ $(document).ready(function () {
             launchContainer.append(name);
             launchContainer.append(date);
             launchContainer.append(id);
-            // let mycard = $("<div>");
-            // // mycard.addClass("launchDatesDiv carousel carousel-item");
-
-            // mycard.append(name);
-            // mycard.append(date);
-            // mycard.append(id);
-
-            // $(".my-card").append(mycard);
             
             // this option parses and formats the time into local time zone 
             // console.log('third option', moment.parseZone(e.net).utcOffset(e.net).format('LLL'));
