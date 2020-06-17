@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0b1f3a;
+  background-color: #051923;
   color: #d7cec9;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ nav {
 }
 
 .nav-st {
-  background-color: blue;
+  background-color: #051923;
   color: white;
 }
 
@@ -38,20 +38,31 @@ nav {
   margin-left: 5px;
 }
 
+.carousel-item {
+  background-color: #003554;
+}
+
 #avatar {
   height: 150px;
+  width: 150px;
   max-width: 150px;
   border-radius: 50%;
+  cursor: pointer;
+  background-image:url("../images/profile-image.jpg");
+  background-position: center;
+  background-size: contain;
 }
 
 #nasa-link {
   height: 150px;
   max-width: 180px;
+  cursor: pointer;
 }
 
 #spacex-link {
   height: 150px;
   max-width: 180px;
+  cursor: pointer;
 }
 
 .paralax-container {
@@ -72,6 +83,7 @@ nav {
     max-width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 .results {
