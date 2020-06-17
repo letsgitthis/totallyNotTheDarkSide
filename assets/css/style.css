@@ -21,7 +21,7 @@ nav {
 }
 
 .sidenav {
-  background-color: blue;
+  background-color: #003554;
 }
 
 .sidenav .tab {
@@ -197,12 +197,27 @@ a {
 }
 
 .hubbleDefinition {
-    background-color: gray;
+    background-color: #003554;
     color: white;
     border-radius: 10px;
     margin-left: 20px;
     font-size: large;
     padding-top: 20px;
+}
+
+#test2 strong {
+  font-size: xx-large;
+  color: white;
+}
+
+.rocket-button {
+  background-color: #003554 !important;
+  color: white !important;
+}
+
+.clear-button {
+  background-color: #003554 !important;
+  color: white !important;
 }
 
 .rocketContainer {
@@ -214,19 +229,18 @@ a {
 }
 
 .rocketsDiv {
-    border-radius: 10px;
-    background-color: gray;
+  border-radius: 10px;
+    background-color: #003554;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
-}
-
+  }
+  
 .rocketsDiv a {
-    border: 1px solid white;
     border-radius: 5px;
-    background-color: mediumturquoise;
-    color: black;
+    background-color: #006494 !important;
+    color: white;
     padding: 5px;
 }
 
