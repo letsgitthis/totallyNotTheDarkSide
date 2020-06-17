@@ -285,27 +285,47 @@ a {
 
 .launchCardStyle {
     background-color: black;
-    opacity: .7;
     border-radius: 10px;
+    font-size: large;
     color: limegreen;
     text-align: center;
-    height: 100px;
+    height: 150px;
     width: 300px;
     margin: 3px;
-    padding: 10px 0px;
+    padding: 10px;
 }
 
-/* .launchCardStyle:nth-child(odd) {
+.launchCardStyle:nth-child(even) {
    background-color: darkblue;
-    opacity: .7;
     border-radius: 10px;
+    font-size: large;
     color: white;
     text-align: center;
-    height: 100px;
+    height: 150px;
     width: 300px;
-    margin: 2px;
-    padding: 10px 0px;
-} */
+    margin: 3px;
+    padding: 10px;
+}
+
+.launchCardStyle:nth-child(6) {
+   display: none;
+}
+
+.launchCardStyle:nth-child(7) {
+   display: none;
+}
+
+.launchCardStyle:nth-child(8) {
+   display: none;
+}
+
+.launchCardStyle:nth-child(9) {
+   display: none;
+}
+
+.launchCardStyle:nth-child(10) {
+   display: none;
+}
 
 .newsDiv {
     margin-top: 40px;
