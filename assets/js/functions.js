@@ -24,3 +24,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.collapsible').collapsible();
 });
+
+// this runs the mobile side bar
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
