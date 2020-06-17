@@ -81,6 +81,9 @@ $(document).ready(function () {
           spaceFlightNewsCard.append(linkDiv);
           spaceFlightNewsCard.append(pDateDiv);
 
+          // note: spaceflightnewscard may need to equal card-content
+          // note: link will need to be placed in card-action
+
           spaceFlightNewsContainer.append(spaceFlightNewsCard);
         } 
         

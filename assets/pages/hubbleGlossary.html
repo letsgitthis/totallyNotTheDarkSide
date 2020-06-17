@@ -60,41 +60,53 @@
     </nav>
     <!-- This is the mobile nav -->
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <a class="tab" href="./spaceFlightNews.html">Space Flight News</a>
-        </li>
-        <li>
-            <a class="tab" href="./hubbleGlossary.html">Hubble Glossary</a>
-        </li>
-        <li>
-            <a class="tab" href="./spaceXArchives.html">Space X Archives</a>
-        </li>
-        <li>
-          <form id="hubbleSubmit">
-            <input
-              type="text"
-              value=""
-              placeholder="Search"
-              id="hubbleUserInput"
-              name="textarea1"
-              class="label-icon"
-              for="search"
-              required
-            />
-          </form>
-        </li>
+      <li>
+        <a class="tab" href="./spaceFlightNews.html">Space Flight News</a>
+      </li>
+      <li>
+        <a class="tab" href="./hubbleGlossary.html">Hubble Glossary</a>
+      </li>
+      <li>
+        <a class="tab" href="./spaceXArchives.html">Space X Archives</a>
+      </li>
+      <li>
+        <form id="hubbleSubmit">
+          <input
+            type="text"
+            value=""
+            placeholder="Search"
+            id="hubbleUserInput"
+            name="textarea1"
+            class="label-icon"
+            for="search"
+            required
+          />
+        </form>
+      </li>
     </ul>
   </header>
 
   <body>
-    <div class="container">
-      <div class="row">
-        <!-- this is where the results of the query populates -->
-
-        <div class="row newsDiv">
-          <!-- *********** result for space news api *********** -->
-        </div>
+    <!-- this is where the results of the query populates -->
+    <!-- <div class="container">
+      <div class="row newsDiv">
+        <!-- *********** result for space news api *********** --
       </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m5">
+                <div class="card-panel teal">
+                    <div class="newsDiv">
+                        <span class="white-text">
+                            Enter a Search term for a definition.
+                            Please wait a few moments for loading times.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- moment js library  -->
