@@ -295,7 +295,7 @@ a {
     padding: 10px 0px;
 }
 
-.launchCardStyle:nth-child(odd) {
+/* .launchCardStyle:nth-child(odd) {
    background-color: darkblue;
     opacity: .7;
     border-radius: 10px;
@@ -305,7 +305,7 @@ a {
     width: 300px;
     margin: 2px;
     padding: 10px 0px;
-}
+} */
 
 .newsDiv {
     margin-top: 40px;

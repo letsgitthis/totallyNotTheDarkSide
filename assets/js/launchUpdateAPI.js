@@ -53,19 +53,19 @@ $(document).ready(function () {
             let date = $("<div>").text(`launch date: ${moment.parseZone(e.net).utcOffset(e.net).format('LLL')}`);
             let id = $("<div>").text(`launch id: ${e.id}`);
             let launchContainer = $("<div>");
-            launchContainer.addClass("launchDatesDiv");
+            launchContainer.addClass("launchCardStyle");
 
             launchContainer.append(name);
             launchContainer.append(date);
             launchContainer.append(id);
-            let mycard = $("<div>");
-            // mycard.addClass("launchDatesDiv carousel carousel-item");
+            // let mycard = $("<div>");
+            // // mycard.addClass("launchDatesDiv carousel carousel-item");
 
-            mycard.append(name);
-            mycard.append(date);
-            mycard.append(id);
+            // mycard.append(name);
+            // mycard.append(date);
+            // mycard.append(id);
 
-            $(".my-card").append(mycard);
+            // $(".my-card").append(mycard);
             
             // this option parses and formats the time into local time zone 
             // console.log('third option', moment.parseZone(e.net).utcOffset(e.net).format('LLL'));
