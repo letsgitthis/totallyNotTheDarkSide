@@ -308,9 +308,10 @@ a {
         display: none;
     }
 
-    /* .brand-logo {
-      
-    } */
+    .header-title {
+      font-size: large !important;
+      flex-wrap: nowrap;
+    }
     
 }
 
