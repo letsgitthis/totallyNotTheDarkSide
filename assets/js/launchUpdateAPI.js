@@ -38,13 +38,14 @@ $(document).ready(function () {
         // this this is number of upcoming launches
         console.log(response.count);
 
-        let launchCount = $("<div>").text(`Upcoming Rocket Launches Next: ${response.count}`);
+        // let launchCount = $("<div>").text(`Upcoming Rocket Launches Next: ${response.count}`);
         
         // adding a class for john to style with 
-        launchCount.addClass('launchTitle');
+        // launchCount.addClass('launchTitle');
 
 
-        $(".launchDatesDiv").parent().prepend(launchCount);
+        // $(".launchDatesDiv").parent().prepend(launchCount);
+        $(".launchDatesDiv").parent();
 
         // loop through and append the upcoming launches to the html
         launchesArr.forEach((e) => {
@@ -52,12 +53,19 @@ $(document).ready(function () {
             let date = $("<div>").text(`launch date: ${moment.parseZone(e.net).utcOffset(e.net).format('LLL')}`);
             let id = $("<div>").text(`launch id: ${e.id}`);
             let launchContainer = $("<div>");
-            launchContainer.addClass('launchCardStyle', 'carousel');
+            launchContainer.addClass("launchDatesDiv");
 
             launchContainer.append(name);
             launchContainer.append(date);
             launchContainer.append(id);
+            let mycard = $("<div>");
+            // mycard.addClass("launchDatesDiv carousel carousel-item");
 
+            mycard.append(name);
+            mycard.append(date);
+            mycard.append(id);
+
+            $(".my-card").append(mycard);
             
             // this option parses and formats the time into local time zone 
             // console.log('third option', moment.parseZone(e.net).utcOffset(e.net).format('LLL'));

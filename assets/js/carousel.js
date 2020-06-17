@@ -1,29 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".carousel");
-  var instances = M.Carousel.init(elems, options);
-});
 
-// Or with jQuery
+// Fixed responsiveness resizing bug, 
+// now need to add click responsiveness to move left and right without swiping 
+  // test click function
+ $(document).ready(function () {
+   $(".carousel.carousel-slider").carousel({
+       fullWidth: true,
+       indicators: true,
+   });
+ });
 
-$(document).ready(function () {
-  $(".carousel").carousel();
-});
 
-var instance = M.Carousel.getInstance(elem);
+// this is javascript for materialbox
+//   document.addEventListener("DOMContentLoaded", function () {
+//     var elems = document.querySelectorAll(".materialboxed");
+//     var instances = M.Materialbox.init(elems, options);
+//   });
 
-/* jQuery Method Calls
-    You can still use the old jQuery plugin method calls.
-    But you won't be able to access instance properties.
+  // Or with jQuery
 
-    $('.carousel').carousel('methodName');
-    $('.carousel').carousel('methodName', paramName);
-  */
+// this runs materialbox, but does not effect youtube videos
+  $(document).ready(function () {
+    $(".materialboxed").materialbox();
+  });
 
-instance.next();
-instance.next(3); // Move next n times.
+// this is the javascript for parallax
+//   document.addEventListener("DOMContentLoaded", function () {
+//     var elems = document.querySelectorAll(".parallax");
+//     var instances = M.Parallax.init(elems, options);
+//   });
 
-instance.prev();
-instance.prev(3); // Move previous n times.
+  // Or with jQuery
 
-instance.set();
-instance.set(3); // Set to nth slide.
+//   this runs parallax
+  $(document).ready(function () {
+    $(".parallax").parallax();
+  });

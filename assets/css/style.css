@@ -55,6 +55,19 @@ nav {
     margin: 5px;
 } */
 
+.paralax-container {
+  width: 100%;
+}
+
+.paralax {
+  width: 100%;
+}
+
+/* need to make image width 100% */
+.paralax img {
+  width: 100%;
+}
+
 /* not working */
 .imageOfTheDay {
     max-height: 500px;
@@ -256,6 +269,10 @@ a {
     .launchDatesDiv {
         display: none;
     }
+
+    .imageOfTheDay {
+        display: none;
+    }
     
 }
 
@@ -338,8 +355,11 @@ a {
 }
 
 .quoteDiv {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 10px;
+    padding: 10px;
 }
 
 .inputFontColor {

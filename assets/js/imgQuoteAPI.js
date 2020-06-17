@@ -34,7 +34,7 @@ $(document).ready(function () {
             } else if (response.media_type === "video") {
                 // console.log('this is a video')
                 // the image has to be reponsive find the correct class for the materialize
-                let video = $('<iframe width="100%" height="auto"> <iframe>');
+                let video = $('<iframe width="800px" height="500px"> <iframe>');
                 video.attr("src", response.url);
                 video.addClass("responsive-video");
 

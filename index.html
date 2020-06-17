@@ -33,7 +33,8 @@
     <!-- This will be the new nav bar -->
     <nav>
       <div class="nav-st row">
-        <a href="#!" class="brand-logo">Space Portal</a>
+        <!-- logo should bring you back to main page -->
+        <a href="#index.html" class="brand-logo">Space Portal</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
@@ -81,15 +82,76 @@
   </header>
 
   <body>
+
+    <!-- need to make clickable on desktop -->
     <div class="container-fluid">
       <div class="row">
+        <div class="carousel carousel-slider center">
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+          </div>
+          <div class="carousel-item black white-text" href="#one!">
+            <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
+          </div>
+          <div class="carousel-item blue white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+          </div>
+          <div class="carousel-item black white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+          </div>
+          <div class="carousel-item blue white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="white-text">This is your fourth panel</p>
+          </div>
+        </div>
+      </div>
+        
+        <div class="row">
+          <div class="col s12">
+            <!-- this is where the quote goes  -->
+            <div class="quoteDiv"></div>
+          </div>
+        </div>
+      
+      <!-- <div class="launchDatesDiv"> -->
+        <!-- <div class="carousel">
+          <div class="carousel-item">
+            <div class="launchCardStyle">
+              <div class="my-card">
+               
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div> -->
+    </div>
+    
+    <!-- end test carousel -->
+    <!-- this is where the launch times populate  -->
+    <!-- <div class="col s12">
+      <div class="upcoming-launch container">
+        <div class="row launchDatesDiv"></div>
+      </div>
+    </div> -->
+
+
+    <!-- parallax background image -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="./assets/images/spaceX-background2.jpeg"></div>
+    </div>
+
         <div class="col s12">
           <!-- this is where the launch times populate  -->
-            <div class="carousel carousel-slider launchDatesDiv">
+            <!-- <div class="carousel launchDatesDiv">
               <div class="carousel-item launchCardDiv">
                 <a class="carousel-item launchCardDiv" href="#"></a>
               </div>
-            </div>
+            </div> -->
         </div>
         <!-- these are search options query cards-->
         <aside class="col s12 m6 hidingQuery search">
@@ -128,21 +190,25 @@
           </div>
         </section>
         <div class="container">
+         
           <div class="row">
             <div class="col s12">
-              <!-- this is where the quote goes  -->
-              <div class="quoteDiv"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
+              
               <!-- image of day or video of day -->
-              <div class="imageOfTheDay"></div>
+              <!-- image of the day should use Material box -->
+
+              <div class="materialboxed imageOfTheDay"></div>
             </div>
           </div>
         </div>
         <div class="col s12"></div>
-      </div>
+
+        <!-- parallax background image -->
+        <div class="parallax-container">
+          <div class="parallax"><img src="./assets/images/spaceX-background.jpeg"></div>
+        </div>
+
+      <!-- </div> -->
     </div>
 
     <footer class="footer">
@@ -170,5 +236,7 @@
     <script src="./assets/js/hubbleGlossaryAPI.js"></script>
     <!-- this is the dropdown materialize js  -->
     <script src="./assets/js/dropdown.js"></script>
+    <!-- this is the carousel script -->
+    <script src="./assets/js/carousel.js"></script>
   </body>
 </html>
