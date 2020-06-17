@@ -67,7 +67,10 @@ $(document).ready(function () {
             let quoteText = $("<span>").text(response.quote.quoteText);
 
             let quoteDiv = $("<div>");
+            // quoteDiv.concat('"' + quoteText + '"');
             quoteDiv.append(quoteText);
+            // displays quote as an object
+            // quoteDiv.append('"' + quoteText + '"');
             quoteDiv.prepend(quoteAuthor);
 
             // $('.results').prepend(quoteDiv);

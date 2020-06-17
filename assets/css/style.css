@@ -65,6 +65,10 @@ nav {
   cursor: pointer;
 }
 
+.indicators {
+  margin-top: 50px;
+}
+
 .paralax-container {
   width: 100%;
 }
@@ -77,13 +81,17 @@ nav {
   width: 100%;
 }
 
-/* not working */
 .imageOfTheDay {
-    max-height: 500px;
-    max-width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    cursor: pointer;
+  max-height: 500px;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.about-site {
+  margin: 30px;
+  text-align: center;
 }
 
 .results {
@@ -287,7 +295,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 20px 0px 20px 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -381,7 +389,7 @@ a {
 
 .spaceFlightNewsCard {
     border-radius: 10px;
-    background-color: gray;
+    background-color: #003554;
     color: white;
     margin: 3px;
     padding: 15px;
@@ -393,7 +401,8 @@ a {
 }
 
 .linkDiv {
-    color: black;
+    background-color: #006494 !important;
+    color: white;
 }
 
 .pDateDiv {
