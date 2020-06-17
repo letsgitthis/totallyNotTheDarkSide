@@ -34,8 +34,24 @@ nav {
     justify-content: start;
 }
 
-#SFNsubmit {
-    margin: 10px;
+.brand-logo {
+  margin-left: 5px;
+}
+
+#avatar {
+  height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+#nasa-link {
+  height: 150px;
+  max-width: 180px;
+}
+
+#spacex-link {
+  height: 150px;
+  max-width: 180px;
 }
 
 .paralax-container {
@@ -54,6 +70,8 @@ nav {
 .imageOfTheDay {
     max-height: 500px;
     max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .results {
