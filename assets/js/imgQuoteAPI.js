@@ -23,7 +23,7 @@ $(document).ready(function () {
             if (response.media_type === "image") {
                 // console.log('this is an image')
                 // the image has to be reponsive find the correct class for the materialize
-                let img = $('<img width="100%" height="auto"> </img>');
+                let img = $('<img width="100%" max-height="500px"> </img>');
                 img.attr("src", response.url);
                 img.addClass("responsive-img");
 

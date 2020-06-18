@@ -82,7 +82,17 @@ nav {
 }
 
 .imageOfTheDay {
-  max-height: 500px;
+  max-height: 500px !important;
+  height: 500px !important;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.responsive-image {
+  max-height: 500px !important;
+  height: 500px !important;
   max-width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
