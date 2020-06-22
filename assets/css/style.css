@@ -81,6 +81,10 @@ nav {
   width: 100%;
 }
 
+.image-of-day-position {
+  margin-bottom: 160px;
+}
+
 .imageOfTheDay {
   max-height: 500px !important;
   height: 500px !important;
@@ -308,7 +312,7 @@ a {
     margin: 20px 0px 20px 100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
 
     .launchDatesDiv {
       flex-wrap: nowrap;
@@ -354,6 +358,24 @@ a {
       flex-wrap: nowrap;
     }
     
+}
+
+@media screen and (max-width: 1730px) {
+  .launchCardStyle:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1375px) {
+  .launchCardStyle:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .launchCardStyle:nth-child(3) {
+    display: none;
+  }
 }
 
 .launchTitle {
